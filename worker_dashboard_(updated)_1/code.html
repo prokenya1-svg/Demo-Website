@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<title>TrustPass Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0462ae",
+            "background-light": "#f5f7f8",
+            "background-dark": "#0f1a23",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .trust-score {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: conic-gradient(#0462ae 270deg, #e6eef4 0deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .trust-score::before {
+      content: "";
+      position: absolute;
+      width: 95px;
+      height: 95px;
+      background: #f5f7f8;
+      border-radius: 50%;
+    }
+    .dark .trust-score::before {
+      background: #0f1a23;
+    }
+    .trust-score-value {
+      position: relative;
+      font-size: 32px;
+      font-weight: 800;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div>
+<header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-2">
+<img 10="" 20="" bg-primary="" dark:bg-primary="" dark:text-gray-200"="" flex="" h-10="" items-center="" justify-center="" rounded-full="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNUg6L4GyQb_2dCwp-du2Mcbfs2ajri9g8u-0iEtPOzc6Kd5F4AW8V4zQu7x4H2L9GDTUtuy1qJA79eVTAzU74ihrgmwtCcK2r2zMZCHbEfAT0bni5OOTbMgJkn4K4lbvjBMW6gHy8Bv8GFEdRG_ZOekXTAC_G-4eEb4tS1Jx4ZJpoxnHLp5saPtZVgzU_QvEfjLP-GQ2Pz5ZhqeMdxW-Cn7rR0xufrfKUJ0L-WmHvy6FABNqFvIvFjsz--TGIyHshW81DLecgRKE" text-gray-800="" w-10=""/>
+<span class="material-symbols-outlined">
+            notifications
+          </span>
+</div></header>
+<main class="p-6 space-y-8">
+<section class="flex flex-col items-center text-center">
+<div class="relative w-32 h-32 rounded-full mb-4">
+<img alt="Josephat Mutai" class="w-full h-full object-cover rounded-full border-4 border-primary/20 dark:border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4nZA-UCKw3rIgRroe-GP7ouhu3yua-sBvVdoBGeL2eaAtPf0qwwxe1u4oK4qJm4pTdtvfEi3xqHNLq4gAbW_a9HqnXcvsPa9ZdBlfx07gPj9JSH036LdNh9PeSSPSI-m9YVJQhTYBXLL3EEpyyxlMaWx1obRF03OXu5Ai5R0SuRAmfulmPwLFIeaFSfxa_p7dLJiefbCWYUUD6zbEJF4Bx7HeFvhe5cng7FV6Xb3moV-8JqJ5JPBdkT4z4Z7zGD2RDftZ7GLrFoU"/>
+</div>
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Josephat Mutai</h2>
+<p class="text-lg text-gray-500 dark:text-gray-400">Electrician, Nairobi</p>
+<div class="mt-6 flex flex-col items-center gap-4">
+<div class="trust-score" style="--score:85;">
+<span class="trust-score-value text-gray-900 dark:text-white">85</span>
+</div>
+<div class="text-center">
+<p class="font-bold text-xl text-gray-900 dark:text-white">TrustScore</p>
+<p class="text-md text-gray-500 dark:text-gray-400">You are eligible for all services</p>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Financial Services</h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4">
+<div class="w-20 h-20 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLLw4Qy78tNXkIkTPktDpfBbi2waxS1H2PabLIIoSmH52ygud9jTKVENW2wDNr4EUkXC3eWehMPNNXGSkrRyRCefVCp93C3N0cQeDbAA8DygJZ_nPAhlSmP7UPAqLCAuapMZMUNZEtj9tIzpAPnQQnBCPSJT-j5jUxPcRP6uzB5E7sCneBkeUbcpZes-JUPUcRxa1O2sAG17XQZo9L_LdiOt3Pyd6FoVuoa-pgJI0inTJIfjzOFmSCmM4uCPd8YAmmka4CQ7dPmy4");'></div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Micro-Loans</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Get quick loans for your needs.</p>
+<div class="mt-2 text-xs font-semibold inline-flex items-center gap-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 py-1 px-2 rounded-full">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span>Eligible: TrustScore 70+</span>
+</div>
+</div>
+<button class="self-start">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</button>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4">
+<div class="w-20 h-20 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8qeMNJNDvn-s_7ZVo2WOGPbtWdSlZUl-L--aKYCTYgPhM37zPkRfE7p0OnUsOSckzkODB6Xb93fBd87rQTbj-46AarFWE67IDIbX2nbqIjmLUAQFjcLTW05nL9bBXnBJ7pxpXRcBxEES1cqeNfa2L6yvdgj5UiqpvHgZcNzuveRbe0EvnPUm1xpXBCQDyl-Uoy1qYDjcRaAvaZ--h-loCbJhPZj9FNcJIxjBL91nJ_i4LRVUqaCHwsCw5K1zZtuPsjtbQW6rB9oA");'></div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Wage Advance</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Access your salary early.</p>
+<div class="mt-2 text-xs font-semibold inline-flex items-center gap-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 py-1 px-2 rounded-full">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span>Eligible: TrustScore 60+</span>
+</div>
+</div>
+<button class="self-start">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</button>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4">
+<div class="w-20 h-20 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlzAYfghI3e9D6fkRLOYsXZ_Hj7Hcb2OajvLySxy4W3AUw6cDCys-bWzRNAEbVQWYTEpYdTwZRK_nzuMe7ELUjZ_Au44FB-guDQuq5TTACsXjR8XlyvzW1vutWpnV-x7oOiN8Ib3dzdYQmZDwbpCQubM6tKEY36p3nWoc20fGZIC6N4MhhTIw1RqYgVtATWkeNv7JUOaUlSRjEc_2kLcmlEwpzSWZLVLRWyijBk8lC59H8a1fHBENvrmr7YxbS-6D5a6RmEuOgmi8");'></div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-gray-900 dark:text-white">Insurance</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Protect yourself and your family.</p>
+<div class="mt-2 text-xs font-semibold inline-flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 py-1 px-2 rounded-full">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Requires TrustScore 50+</span>
+</div>
+</div>
+<button class="self-start">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<section>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white">My Certifications</h3>
+<a class="text-primary font-semibold text-sm" href="#">View All</a>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-24 h-24 rounded-full bg-cover bg-center p-1 border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCEPPU_7G2gRpCkkOdcXt_rmVaq3v5Bsf6HPxPRerfbSRdr6-CQ0oAyVD6IkIQjTe-feZcN0CltmMc3JK2CU6vLgCnW7smmVrb3aUx4ca4e5soQa7vov8PPaxN6lYozPJUNI4qz53pwbz_0-DJ32_3-3xf7RpO5-bkOJ2RWke-gx9Y3EFKq6YzaUdM9vPNkOmXUmVNZDKW7fgBihqPQ525Wt99EexrsrvK4SyUYpCfU69QK1JvHW4orIyN0L0TmiodvPLpqoPigms");'>
+<img alt="Plumbing Certificate Badge" class="rounded-full w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZpu3WAAXlr2nOIIEnjkUf2taRTkbEHCql-QYt8EctIL8LNLdpY1uGLUWj-VTZV1zZK4c41y8vuwfAtH4gazVX71M6OwUram7oGVfcTrC2iD2ZXOz-wYTo673GiBIgYS7hDwwD8HtFvRggn-ablrIbmX0zlhpz8gjUUn3dGFf6-5_QnQsgEDKS6ggOo3N2ZKhuFmekob826hyW54CIyZmXBBbPRwu4YqbwSgfRNuw0CMSPjOnNUXBxaPr_g5BB-EpGvgQDvqG1ZTM"/>
+</div>
+<p class="font-semibold text-sm text-gray-700 dark:text-gray-300 leading-tight">Plumbing Certificate</p>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-24 h-24 rounded-full bg-cover bg-center p-1 border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrB2AH3yiashNW6tpDMGP17p16APKmPr0R_VcxHwkWMrzmMGi0_KYz7eNe3YjTYHGQgZmTb2VyZq42R8Ja8kdt8y_3tGG7upb5x4i47gDL1FXRFLfA9el8zBQeORAlEys4nYk-n82IozxA_Un3znYCr0t33loZerBBh0OzGIuWS1uU7JpUqgoRYwlwvdk3K6512uQn67EvvVRJOpwkA1pkdR3ZrWaTGynkR1KswpZrObMJABYGxNwH-tpf5hw_mR59wT8u9y8qCNo");'>
+<img alt="Electrical Safety Badge" class="rounded-full w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO8e83H2Hb85FtpQyyChcelO3WFzEFdVZ_tTCMpfBZrSVbXn2-BwR0OPCyk7hcs3TfZg4fBR02FWXwV3waUmHgr62VIb0j__xRdMc2WUZB-eBRO1qNkk1BS-4m8C6tjvhD5ijwELyyTWi02SBemVcjiMs3xmS30UlYbsp2vsjDfgpzSp9u1lXjzfq0GtmE_ak38Ac6mMTPYRjvUsH9KpdNoMwfbBs2mBhF0Y8p1wN5rzgt8HwtqYEhCGNriG85b1uhlc5gsq3YwOM"/>
+</div>
+<p class="font-semibold text-sm text-gray-700 dark:text-gray-300 leading-tight">Electrical Safety</p>
+</div>
+<div class="flex flex-col items-center justify-center text-center gap-2">
+<div class="w-24 h-24 rounded-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 border-2 border-dashed border-gray-400 dark:border-gray-500">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 text-4xl">add</span>
+</div>
+<p class="font-semibold text-sm text-primary">Add New</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-1/5 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-bold">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-xs font-medium">Jobs</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-medium">Training</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">credit_card</span>
+<span class="text-xs font-medium">Wallet</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

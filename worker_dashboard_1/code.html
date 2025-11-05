@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>TrustPass Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#003b6b",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1a23",
+            },
+            fontFamily: {
+              display: ["Manrope"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-auto min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<div class="flex items-center justify-between">
+<div class="w-10"></div>
+<h1 class="text-lg font-bold text-primary dark:text-white">TrustPass</h1>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-primary transition-colors hover:bg-primary/10 dark:text-white dark:hover:bg-primary/20">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4">
+<div class="space-y-6">
+<section class="overflow-hidden rounded-xl bg-primary/5 shadow-sm dark:bg-primary/10">
+<div class="relative h-28 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6ZFJ6sqkOhPBT-ynHZ1TbvorJZ0_cnDpJuQ2DsmFFH9KR_BlQOek-MxCNLrrnY_mPMFWzVQNcmWgPGSDuEZh9JE05Ow8AewlgP87507y-xUly2NwQ7-7sJansBkJWdmFloH42K5okEXiRPAPfiv0FxM7yZzBc6Hc8B4_mqKDweqhwM4SgVIPX_U9opEs-HuKoqe_-iH1U35d_swGbHwWqwMeqNB1FvXKbiE2YhuAz3lEUK57J3p5aFK1sd_qTU1yvx4W5FoytT1Y")'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light to-transparent dark:from-background-dark"></div>
+</div>
+<div class="relative -mt-16 p-4">
+<div class="mb-4 flex items-end justify-between">
+<div class="flex items-end gap-3">
+<div class="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20 p-1 dark:bg-primary/30">
+<div class="flex h-full w-full items-center justify-center rounded-full bg-background-light dark:bg-background-dark">
+<p class="text-2xl font-bold text-primary dark:text-white">78</p>
+</div>
+</div>
+<div>
+<p class="text-lg font-bold text-primary dark:text-white">Excellent</p>
+<p class="text-sm text-primary/70 dark:text-white/60">TrustScore</p>
+</div>
+</div>
+<button class="flex h-9 min-w-[84px] cursor-pointer items-center justify-center rounded-lg bg-primary/20 px-3 text-sm font-medium text-primary transition-colors hover:bg-primary/30 dark:bg-primary/30 dark:text-white dark:hover:bg-primary/40">
+<span class="truncate">Details</span>
+</button>
+</div>
+<p class="text-sm text-primary/80 dark:text-white/70">
+                A higher score means better job opportunities and access to financial services. Keep it up!
+              </p>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-xl font-bold text-primary dark:text-white">Quick Actions</h2>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white transition-opacity hover:opacity-90">
+<span class="truncate">Find Jobs</span>
+</button>
+<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/20 px-4 text-sm font-bold text-primary transition-colors hover:bg-primary/30 dark:bg-primary/30 dark:text-white dark:hover:bg-primary/40">
+<span class="truncate">Add Work History</span>
+</button>
+</div>
+</section>
+<section class="space-y-3">
+<h2 class="text-xl font-bold text-primary dark:text-white">Recent Verifications</h2>
+<div class="space-y-3 rounded-lg bg-background-light p-1 dark:bg-background-dark">
+<div class="flex items-center gap-4 rounded-lg bg-primary/5 p-3 dark:bg-primary/10">
+<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-white">
+<span class="material-symbols-outlined"> check_circle </span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-primary dark:text-white">Plumbing Project</p>
+<p class="text-sm text-primary/70 dark:text-white/60">Completed</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-primary/5 p-3 dark:bg-primary/10">
+<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-white">
+<span class="material-symbols-outlined"> check_circle </span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-primary dark:text-white">Construction Work</p>
+<p class="text-sm text-primary/70 dark:text-white/60">Verified</p>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-3">
+<h2 class="text-xl font-bold text-primary dark:text-white">Job Matches</h2>
+<div class="space-y-3 rounded-lg bg-background-light p-1 dark:bg-background-dark">
+<div class="flex items-center gap-4 rounded-lg bg-primary/5 p-3 dark:bg-primary/10">
+<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-white">
+<span class="material-symbols-outlined"> work </span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-primary dark:text-white">Electrician Needed</p>
+<p class="text-sm text-primary/70 dark:text-white/60">Nairobi</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-primary/5 p-3 dark:bg-primary/10">
+<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-white">
+<span class="material-symbols-outlined"> work </span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-primary dark:text-white">Plumbing Assistant</p>
+<p class="text-sm text-primary/70 dark:text-white/60">Mombasa</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="sticky bottom-0 border-t border-primary/10 bg-background-light/80 backdrop-blur-sm dark:border-primary/20 dark:bg-background-dark/80">
+<nav class="flex justify-around px-2 pb-2 pt-1">
+<a class="flex w-full flex-col items-center justify-center gap-1 rounded-lg py-1 text-primary transition-colors hover:bg-primary/10 dark:text-white dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> home </span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex w-full flex-col items-center justify-center gap-1 rounded-lg py-1 text-primary/70 transition-colors hover:bg-primary/10 dark:text-white/60 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> work </span>
+<p class="text-xs font-medium">Jobs</p>
+</a>
+<a class="flex w-full flex-col items-center justify-center gap-1 rounded-lg py-1 text-primary/70 transition-colors hover:bg-primary/10 dark:text-white/60 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> person </span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+<a class="flex w-full flex-col items-center justify-center gap-1 rounded-lg py-1 text-primary/70 transition-colors hover:bg-primary/10 dark:text-white/60 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> school </span>
+<p class="text-xs font-medium">Training</p>
+</a>
+<a class="flex w-full flex-col items-center justify-center gap-1 rounded-lg py-1 text-primary/70 transition-colors hover:bg-primary/10 dark:text-white/60 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> design_services </span>
+<p class="text-xs font-medium">Services</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

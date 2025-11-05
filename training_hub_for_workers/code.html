@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustPass Training Hub</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0462af",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1a23",
+            },
+            fontFamily: {
+              "display": ["Manrope"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4">
+<button class="text-gray-800 dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<img alt="TrustPass Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwXKLx38DCiPy6i5lB-KRqOeTTKiE7Mqj67ApNsLrgnIjooyH7KczWmbT4jfygf9jC_Nh0FWQcpf8AaEHHcpn-i3ZtPUuTUbTwuydw5hMoWI5AXrsLqKnHA9hMflg6HksxEaUua6LPXlYzNRYOnorcyIhjZdUNdbyN-iH2x09fteQjcwGxphGlYXS8hAR7CCkPwBZEUQ40zBoGOelQYqeegUGtF_G_hkPUef1L7hK-sdXgv2fnYG17Wm-3GsVGHlShmAzQ74vikAA"/>
+<div class="w-8"></div>
+</div>
+</header>
+<main class="flex-grow p-4">
+<h1 class="text-3xl font-bold text-gray-900 dark:text-white">Training Hub</h1>
+<p class="mt-1 text-gray-600 dark:text-gray-400">Enhance your skills and unlock new opportunities.</p>
+<div class="relative mt-6">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">search</span>
+<input class="w-full rounded-full border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 py-3 pl-10 pr-4 text-gray-900 dark:text-white focus:border-primary focus:ring-primary" placeholder="Search for courses..." type="text"/>
+</div>
+<div class="mt-6 flex space-x-2 overflow-x-auto pb-2 -mx-4 px-4">
+<button class="whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white">All</button>
+<button class="whitespace-nowrap rounded-full bg-gray-200 dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300">Construction</button>
+<button class="whitespace-nowrap rounded-full bg-gray-200 dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300">Hospitality</button>
+<button class="whitespace-nowrap rounded-full bg-gray-200 dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300">Healthcare</button>
+</div>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Featured Courses</h2>
+<div class="mt-4 flex space-x-4 overflow-x-auto -mx-4 px-4 pb-4">
+<div class="flex w-64 flex-shrink-0 flex-col gap-3">
+<img alt="Construction Safety Course Thumbnail" class="h-32 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgW10Ty0cQZtf8UynWk9HjSloKDQktaCB4U2pOmcQyZclVouWdfSEn0-M8X1OtZ3XFWwuAiIimfg0a82jTW5YGQTcnfHkhRY41jx19BwTcaaRkPihLtC8UqCy5GoQTGcS7Oe9Pk-zLPJwwwA8L3tNZMh1dWPXeXhviyWnU_MVWo6NlfYgZW3re_aQ37qtBk1McIe1WA9r5PuU1c3DcdAXLhlgVZgj9lNpbHWlQBazkWCPnVk0dA6U2gNyARJnUbH8hZhwVuPk_NZQ"/>
+<div>
+<h3 class="font-semibold text-gray-900 dark:text-white">Construction Safety</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">2 weeks • KES 500</p>
+</div>
+</div>
+<div class="flex w-64 flex-shrink-0 flex-col gap-3">
+<img alt="Hospitality Basics Course Thumbnail" class="h-32 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJKHl8Xg4glcrxJatNP-_pFYZuY2PHLXjVz9_fuNHbvzJWxItZ2y2NsOfmIW9kXE9Z7iVuMSVwssB5PngBZejw17bcidwoZFI0g4cgUOxH5QzNJ2Dt6e59mrgFJBxhhay2lxdI5x4K4mHrsDXYcQglPiD-wR1S6_nm7rXMMeOvxr5N-BQM1oQy4LgWJvfDdmelyXdeOFGFUHC48E1JWjLq2dyFjVIdb53t9C7-JL4PtQAjAABneinQN06jRr1eQ-llqFGFZJo-En4"/>
+<div>
+<h3 class="font-semibold text-gray-900 dark:text-white">Hospitality Basics</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">1 week • KES 300</p>
+</div>
+</div>
+<div class="flex w-64 flex-shrink-0 flex-col gap-3">
+<img alt="Healthcare Assistant Course Thumbnail" class="h-32 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAved3LnKMLPsIB1ZfkEidiII2QY0Uzq8dFzq-V5qb1eShtOz7WPoswHfhVaO8_6NS_gh2R3Z1DL3-E3mNRbmrdZEL98Peu7ecuysGqmX-C1a9XAv6sv62pfktZ7mLg4Q7YdgP07FZMlTTqvE5WcBOJS9GwPYBGJQaWw_ul9TPM8fcYLmHKyCpFyil_FIMUlVexS5MiLAO2zC1RnC-HzVqxXHLQZI7sUR_PSYzaYlkrEdZBcDA-gvUmw4PqazBCq_U4bYnglkppCvk"/>
+<div>
+<h3 class="font-semibold text-gray-900 dark:text-white">Healthcare Assistant</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">3 weeks • KES 750</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">All Courses</h2>
+<div class="mt-4 space-y-4">
+<div class="flex items-center gap-4">
+<img alt="Course thumbnail" class="h-20 w-20 flex-shrink-0 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkzZqiyaY6NyM24G9D2GYN9rhBqKyMTSTUMI6wcF2FAd6PYEhI7HfZYVBNAzznK4h4MAbGKhr292tM8tLKk7t09ONNYq4Lj0VRMvI21bGno6kh0kw09eBajUuDSuZKic2izfeyifRcmDfJeODtB4wIbp87nMrUi6qlCh93vHEOPm5C5BH_LPFmYz-lql7CxOiuQY1dc-PFX-DdalIGDNQl7dL72NPJa-Q-0RaD__3pz_BLiHaIE93mG1-u0WaNp68SZWsG83ZrCWE"/>
+<div class="flex-grow">
+<h3 class="font-semibold text-gray-900 dark:text-white">Advanced Masonry</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">4 weeks • KES 1,200</p>
+</div>
+<button class="text-primary"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Course thumbnail" class="h-20 w-20 flex-shrink-0 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY7cqJ2o5ILCn2QIsHm-nQOmSYWnMHb3eY-bEUKm8v-GgSpWLERu0nJIJFXlaT56gol7XSMaMLrS2fO8WORTjqAvFjhiM8UwCCRq52RiayvVWWfDKborxDeLBmznHSqIguGmnngJCmWo9oXnRqXFhawJXE2NzXlhRjDcxZyPeoN5hXoPXs5TsA0Rtw6pTySxmVnjEzbL4xe0WNUtCCkyK9ATdkR-xJBjsrso0zfta-QlCE1hT8wdUjHNy6WWI6kaww0bNUqWABUlU"/>
+<div class="flex-grow">
+<h3 class="font-semibold text-gray-900 dark:text-white">Customer Service Excellence</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">2 weeks • KES 600</p>
+</div>
+<button class="text-primary"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Course thumbnail" class="h-20 w-20 flex-shrink-0 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfiOMm5TzvU081_U_1ynFLKxWQPhC-48oWKAJspYA9BRmmbUrREbItkORtsPcXANol-ti-HjGFBD-yBuen8Jla4DqTCBGNB4NlBLQhprGIR9EvHjFR0ZJRhzcQSri9WCg7EuO6ImBART8ure7J4JZ01FrMJvOnvI5x_Mgn8uEt543uDXajb6xqfq24eI6Pnz_djmy-xM01CnYL9iQ8hNVICK4faRuc2GO9J_TZI3HepTLoYR7N8mIYTWL6jup_8YBgVLzY4-on8Ro"/>
+<div class="flex-grow">
+<h3 class="font-semibold text-gray-900 dark:text-white">First Aid Certification</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">1 week • KES 450</p>
+</div>
+<button class="text-primary"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</section>
+</main>
+<nav class="sticky bottom-0 border-t border-gray-200 dark:border-gray-800 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-xs font-medium">Jobs</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-bold">Training</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

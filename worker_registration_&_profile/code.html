@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustPass - Create Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003b6b",
+                        "secondary": "#f07c29",
+                        "accent": "#2e7d32",
+                        "text-light": "#0f1a23",
+                        "text-dark": "#f5f7f8",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1a23",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1f2937",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="container mx-auto max-w-lg px-4 pt-8 pb-24">
+<div class="text-center mb-8">
+<h1 class="text-3xl font-bold text-primary">Join TrustPass</h1>
+<p class="text-text-light/80 dark:text-text-dark/80 mt-2">Build your Digital Work Passport and unlock new opportunities.</p>
+</div>
+<div class="space-y-6">
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Full Name</span>
+<input class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="e.g. Juma Otieno" type="text"/>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Phone Number</span>
+<input class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="e.g. 0712 345 678" type="tel"/>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">National ID Number</span>
+<input class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="Enter your ID number" type="text"/>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Occupation</span>
+<select class="form-select mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 text-text-light/90 dark:text-text-dark/90">
+<option>Select your occupation</option>
+<option>Driver</option>
+<option>Carpenter</option>
+<option>Plumber</option>
+<option>Electrician</option>
+<option>Domestic Worker</option>
+</select>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Skills</span>
+<textarea class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="e.g. Defensive driving, Furniture making, Pipe fitting" rows="3"></textarea>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Short Bio</span>
+<textarea class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="Tell us a bit about your work experience and what you're looking for." rows="3"></textarea>
+</label>
+<label class="block">
+<span class="text-sm font-medium text-text-light/90 dark:text-text-dark/90">Languages</span>
+<input class="mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring focus:ring-primary/20 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50" placeholder="e.g. Swahili, English" type="text"/>
+</label>
+</div>
+<div class="mt-8">
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 dark:ring-offset-background-dark transition-colors duration-300">
+                Create Profile &amp; Get Verified
+            </button>
+</div>
+<div class="relative flex py-5 items-center">
+<div class="flex-grow border-t border-border-light dark:border-border-dark"></div>
+<span class="flex-shrink mx-4 text-xs text-text-light/60 dark:text-text-dark/60">OR</span>
+<div class="flex-grow border-t border-border-light dark:border-border-dark"></div>
+</div>
+<div class="space-y-4">
+<button class="w-full flex items-center justify-center gap-3 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-light dark:text-text-dark font-semibold py-3 px-4 rounded-lg hover:bg-background-light/50 dark:hover:bg-surface-dark/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 dark:ring-offset-background-dark transition-colors duration-300">
+<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_105_2358)"><path d="M22.477 12.2729C22.477 11.4547 22.4063 10.6547 22.2801 9.87285H12.2422V14.33H18.1138C17.8483 15.7877 17.0656 17.0656 15.9341 17.8483L15.9221 17.9255L19.4522 20.6083L19.5703 20.62C21.4392 18.9142 22.477 16.2961 22.477 12.2729Z" fill="#4285F4"></path><path d="M12.2422 23.0001C15.2536 23.0001 17.758 22.0183 19.5703 20.62L15.9341 17.8483C14.9392 18.4919 13.6892 18.8828 12.2422 18.8828C9.3957 18.8828 6.95995 17.0528 6.09641 14.5456L6.00959 14.5583L2.33857 17.4143L2.31689 17.5256C4.12095 20.812 7.89278 23.0001 12.2422 23.0001Z" fill="#34A853"></path><path d="M6.09652 14.5455C5.83095 13.8046 5.67966 12.9961 5.67966 12.1819C5.67966 11.3677 5.83095 10.5592 6.09652 9.81822L6.09172 9.70327L2.31686 6.84188L2.33864 6.73059C1.61141 8.16368 1.16406 9.77186 1.16406 11.4546C1.16406 13.1374 1.61141 14.7456 2.33864 16.1787L6.09652 14.5455Z" fill="#FBBC05"></path><path d="M12.2422 5.48188C14.4796 5.48188 15.9341 6.36823 16.7114 7.10914L19.6406 4.34096C17.7525 2.61823 15.248 1.36368 12.2422 1.36368C7.89278 1.36368 4.12095 3.55177 2.31689 6.84186L6.09646 9.81822C6.95995 7.31096 9.3957 5.48188 12.2422 5.48188Z" fill="#EA4335"></path></g><defs><clipPath id="clip0_105_2358"><rect fill="white" height="21.6364" transform="translate(1.16406 1.36368)" width="21.313"></rect></clipPath></defs></svg>
+<span>Sign up with Google</span>
+</button>
+<button class="w-full flex items-center justify-center gap-3 bg-secondary text-white font-semibold py-3 px-4 rounded-lg hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary/50 dark:ring-offset-background-dark transition-colors duration-300">
+<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+</svg>
+<span>Use Phone Number + OTP</span>
+</button>
+</div>
+<div class="text-center mt-8">
+<p class="text-xs text-text-light/60 dark:text-text-dark/60">
+                By creating an account, you agree to our <a class="font-medium text-primary hover:underline" href="#">Terms of Service</a> and <a class="font-medium text-primary hover:underline" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</div>
+
+</body></html>

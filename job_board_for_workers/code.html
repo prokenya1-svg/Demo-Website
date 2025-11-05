@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustPass - Job Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003b6b",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1a23",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-primary dark:text-background-light">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -ml-2">
+<svg class="text-primary dark:text-background-light" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+</button>
+<h1 class="flex-1 text-lg font-bold text-center text-primary dark:text-background-light">Jobs</h1>
+<div class="w-8"></div>
+</div>
+<div class="px-4 pb-4">
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="text-primary/60 dark:text-background-light/60" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+</div>
+<input class="w-full h-12 pl-10 pr-4 text-primary bg-primary/10 dark:bg-primary/20 dark:text-background-light border-none rounded-lg focus:ring-2 focus:ring-primary/50 dark:placeholder:text-background-light/60 placeholder:text-primary/60" placeholder="Search for jobs, e.g. 'Driver'" type="search"/>
+</div>
+</div>
+<div class="px-4 pb-4 overflow-x-auto">
+<div class="flex space-x-2">
+<button class="flex items-center h-10 px-4 space-x-2 text-sm font-medium bg-primary/10 dark:bg-primary/20 rounded-lg whitespace-nowrap">
+<span>Location</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+</button>
+<button class="flex items-center h-10 px-4 space-x-2 text-sm font-medium bg-primary/10 dark:bg-primary/20 rounded-lg whitespace-nowrap">
+<span>Occupation</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+</button>
+<button class="flex items-center h-10 px-4 space-x-2 text-sm font-medium bg-primary/10 dark:bg-primary/20 rounded-lg whitespace-nowrap">
+<span>Skills</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 py-2 space-y-4">
+<div class="p-4 bg-background-light dark:bg-background-dark border border-primary/10 dark:border-primary/20 rounded-xl flex items-center space-x-4">
+<div class="flex-shrink-0">
+<img alt="Construction company logo" class="object-cover w-16 h-16 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOnEGgzd4DwnA1Cq4txiVzfcfX37tYW2QKeHBl3f_2gT1PWUaanj-eapjSnCkMG4-pColxXMZU3LNgEet1qkPjt8cQ92kUhGmwSPfLc8QIh0Ndlv_Pno-lS8tOLRmRt0Wfv4gS4wJv5Kqnar6wQCd7kBvwL0qnGz2493Nfx7Hzxv6853oyluDXin4pp36Zz9TATC6_OvROYj1CPdrbJqFvIl9QitD2m5tPGLHdUnEU3r6jmnW3s8Uy4kvuk_EKXkKZzAW0Rgv4JrE"/>
+</div>
+<div class="flex-1">
+<h3 class="text-base font-bold text-primary dark:text-background-light">Construction Worker</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">BuildCo Ltd.</p>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Nairobi, Kenya</p>
+</div>
+<div class="flex flex-col items-center">
+<svg fill="#22c55e" height="28" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+<p class="text-xs font-bold" style="color: #22c55e;">Verified</p>
+</div>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark border border-primary/10 dark:border-primary/20 rounded-xl flex items-center space-x-4">
+<div class="flex-shrink-0">
+<img alt="Electrician company logo" class="object-cover w-16 h-16 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw8aIwEqWdCOvRtQLt6srKvCZRDkW-v3NZ49fMd_tGSOWYvxL-rrIf3xVSWgq8TKEvj6-XhUHnWHVcOW-YI8FdNmUb-utd-yVFySRn3MFUt7y8dbnP1B_x8CvENGetBiFS9fVUOA_ZGwG3J21KIJ26mQVjVr3eVR3GGULd7_BpYebyTTtTpHDub92zYW9h4aCNm5jTV1kDVJbFem2mX021S3PHmnAD64fqutwVnLXk0gK1h_lZXBTMVpXYQsqKA2F6gFQuSNRj8Kg"/>
+</div>
+<div class="flex-1">
+<h3 class="text-base font-bold text-primary dark:text-background-light">Electrician</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Sparky Solutions</p>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Mombasa, Kenya</p>
+</div>
+<div class="flex flex-col items-center">
+<svg fill="#22c55e" height="28" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+<p class="text-xs font-bold" style="color: #22c55e;">Verified</p>
+</div>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark border border-primary/10 dark:border-primary/20 rounded-xl flex items-center space-x-4">
+<div class="flex-shrink-0">
+<img alt="Plumbing company logo" class="object-cover w-16 h-16 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOMF1pVTYemi6aI-dOV3oR_9UtCV44Aw6YFGjy8p7koWKi_lwnyv9iUVXEYEEQkNRCfHaM7MvVzZYhBKICD5GE8Amy-oRAx3Qms7S5Dql-MkVdTk938LeM5VBfAW1GOhgLUGhnPaVmJVyb3jYE2fUTePvg9kedwy--ndtUKST8ZrGg1bweb57lXCH4jpdzaVmrqABwVE2SPPeUuQdznbdwBaTOWt1m0zpHHyJd58BRQUivri0NB-qohxKY0jiygKWVox5qovWCcwg"/>
+</div>
+<div class="flex-1">
+<h3 class="text-base font-bold text-primary dark:text-background-light">Plumber</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">AquaFix Kenya</p>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Kisumu, Kenya</p>
+</div>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark border border-primary/10 dark:border-primary/20 rounded-xl flex items-center space-x-4">
+<div class="flex-shrink-0">
+<img alt="Security company logo" class="object-cover w-16 h-16 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPag9vRAbGDy58I83kuFknwfs8p6lvQvoO8nyDdLeSbE4HpIHy4RGG3Ydy-XHGFr2i0-a43VHNeTD7QFsXmpFwRqv2R6A8vS2RyaXcLS-nKZE6QrsEs7pHVlKOC-hV3phDElBEeOsUaeyEupNKQmtfHZvEtD-bBws1U_gJTiFGCcxTm5M5HSqhSpjbmiQh-KEPzUlFY0vt5mvZVlAJ94lpo70V5eLOyB5KgiNCxYfmrDfoRmbdSghRSlywgFmLRvK7SXLuMwryxMY"/>
+</div>
+<div class="flex-1">
+<h3 class="text-base font-bold text-primary dark:text-background-light">Security Guard</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Sentinel Protection</p>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Nakuru, Kenya</p>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-primary/10 dark:border-primary/20">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center w-1/5 p-2 space-y-1 text-primary/70 dark:text-background-light/70" href="#">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center w-1/5 p-2 space-y-1 text-white bg-primary rounded-lg" href="#">
+<svg class="w-6 h-6" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" ry="2" width="20" x="2" y="7"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+<span class="text-xs font-medium">Jobs</span>
+</a>
+<a class="flex flex-col items-center w-1/5 p-2 space-y-1 text-primary/70 dark:text-background-light/70" href="#">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+<a class="flex flex-col items-center w-1/5 p-2 space-y-1 text-primary/70 dark:text-background-light/70" href="#">
+<svg class="lucide lucide-graduation-cap" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.838l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+<span class="text-xs font-medium">Training</span>
+</a>
+<a class="flex flex-col items-center w-1/5 p-2 space-y-1 text-primary/70 dark:text-background-light/70" href="#">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.85 8.62a4 4 0 0 1 6.3 -4.62a4 4 0 0 1 7.7 0a4 4 0 0 1 6.3 4.62a4 4 0 0 1-3.34 6.78a4 4 0 0 1-7.23 0a4 4 0 0 1-7.23 0a4 4 0 0 1-3.34-6.78z"></path><line x1="12" x2="12" y1="12" y2="22"></line><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m4.93 19.07 4.24-4.24"></path></svg>
+<span class="text-xs font-medium">Services</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

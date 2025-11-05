@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustPass Employer Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#003b6b",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1a23",
+            },
+            fontFamily: {
+              "display": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between group/design-root overflow-x-hidden">
+<main class="flex-grow">
+<header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark">
+<div class="w-12"></div>
+<h1 class="text-lg font-bold text-gray-900 dark:text-white flex-1 text-center">TrustPass</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center h-12 w-12 text-gray-900 dark:text-white">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<div class="px-4 py-5">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Welcome, Employer</h2>
+</div>
+<div class="flex gap-4 px-4 py-3">
+<button class="flex-1 rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold shadow-sm transition-opacity hover:opacity-90">
+                    Search Workers
+                </button>
+<button class="flex-1 rounded-lg h-12 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold transition-colors hover:bg-primary/20 dark:hover:bg-primary/30">
+                    Post a Job
+                </button>
+</div>
+<div class="px-4 pt-8 pb-3">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Recent Verifications</h2>
+</div>
+<div class="space-y-2 px-4">
+<div class="flex items-center gap-4 rounded-lg bg-white dark:bg-black/20 p-3">
+<img alt="James Mwangi" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ie4JWJcKpmpiKRjyWVva3fS3rKlFUheag6vyQtaMNirqKYUQ6CjoSemuwonYviuwMAeRbaHDrsFLHjZvdeiq969yds7xxrItnvjY7a-oLQdz-kN1QRfY6_spb4U7XJEsI4hNBhh22vAvyZ4BDUiUfcdNoVMAMfk8V7jyaEWcwgWHjeYXYSwnX2dWftcrliKg-jdzu4PRecKThmmHcSgAyyiMoNvHXaqBp_Fh3ztLLPMxl3fJkoE9eCzFNAPVmttTlt1nhxIXTk4"/>
+<div class="flex-1">
+<p class="text-base font-semibold text-gray-900 dark:text-white">James Mwangi</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Electrician</p>
+</div>
+<div class="flex items-center gap-1 rounded-full bg-green-100 dark:bg-green-900/50 px-3 py-1">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 text-base">verified_user</span>
+<p class="text-base font-bold text-green-600 dark:text-green-400">92</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-white dark:bg-black/20 p-3">
+<img alt="Sarah Wambui" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbVdMBoZViUJ7T9El7eArzw5sNWoTF03Mo4-CU53akqy5bzrLNR-2pYfRiS2txroxIva1fNXPlih2c2cBzRaD9YpIB1ly21yS7FX11mSjV-QtSk93JFtH5sUWn5ybGcA0PzvTYgb6Qq7bgx-gTgre5WIFW7fqQ0_9_jEJHxgUhudhfSv3O1bW5w2Vuc7J4E0QMl6qVqheWzd_UwO3AOZFOow45GjzIqDdWPS2KkYo8BOtLN5MDTpsnwNxqgvVVc6ko_fxNniVkKuw"/>
+<div class="flex-1">
+<p class="text-base font-semibold text-gray-900 dark:text-white">Sarah Wambui</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Plumber</p>
+</div>
+<div class="flex items-center gap-1 rounded-full bg-green-100 dark:bg-green-900/50 px-3 py-1">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 text-base">verified_user</span>
+<p class="text-base font-bold text-green-600 dark:text-green-400">85</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-white dark:bg-black/20 p-3">
+<img alt="David Kamau" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMzkuioaBpwALMNZTLSliq8AcDuuZWyGZ7syIAo1_KMewMFBG4uiMe-2ua2TdmJtCzVsbWVWNe7e8qRDzx0d2S0Vw633OLKYeQqb32Xc6-VNVzJCJ9Yi_ZNWNNNC8xeiysedb3w9v9CCpUJ3hd03vE2omiiwAgCHrYgACWDRlXPo6C9Asl26rpuEmCoHfrXSk9_0r6Udcc_YDutsWjJxqlW5xV35jGV1MCeNi1GfwpjTSViDrCqjcXR4AwBPBqTqYtFfGPDmOLblg"/>
+<div class="flex-1">
+<p class="text-base font-semibold text-gray-900 dark:text-white">David Kamau</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Construction Worker</p>
+</div>
+<div class="flex items-center gap-1 rounded-full bg-orange-100 dark:bg-orange-900/50 px-3 py-1">
+<span class="material-symbols-outlined text-orange-500 dark:text-orange-400 text-base">verified_user</span>
+<p class="text-base font-bold text-orange-500 dark:text-orange-400">78</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800">
+<nav class="flex justify-around items-center h-20 px-2 pb-2">
+<a class="flex flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="bg-primary/10 dark:bg-primary/20 rounded-full p-2">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-xs font-bold">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 transition-colors hover:text-primary dark:hover:text-primary" href="#">
+<div class="p-2">
+<span class="material-symbols-outlined">search</span>
+</div>
+<p class="text-xs font-medium">Search</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 transition-colors hover:text-primary dark:hover:text-primary" href="#">
+<div class="p-2">
+<span class="material-symbols-outlined">work</span>
+</div>
+<p class="text-xs font-medium">Jobs</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 transition-colors hover:text-primary dark:hover:text-primary" href="#">
+<div class="p-2">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<p class="text-xs font-medium">Verify</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
